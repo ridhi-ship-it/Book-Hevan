@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f5f0;
+}
+
+/* Navbar */
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffc107 !important;
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("bg/6.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Welcome Section */
+
+section h2 {
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+/* Cards */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Featured Categories */
+
+.category-card h5 {
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+/* Buttons */
+
+.btn-primary,
+.btn-warning {
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+}
+
+footer h3 {
+    color: #ffc107;
+}
+
+footer form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    color: black;
+}
+
+footer input,
+footer select {
+    border-radius: 10px !important;
+}

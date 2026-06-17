@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Products - Book haven</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .card {
+            transition: 0.3s;
+            height: 100px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-img {
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Book Haven</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="nav-link" href="cart.html">
+                Cart (<span id="cartCount">0</span>)
+            </a>
+        </div>
+    </nav>
+
+    <!-- Heading -->
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Our Products</h2>
+
+        <!-- Filter Buttons -->
+
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-warning m-1" onclick="filterProducts('all')">
+                All
+            </button>
+
+            <button class="btn btn-outline-warning m-1" onclick="filterProducts('self')">
+                Self
+            </button>
+
+            <button class="btn btn-outline-warning m-1" onclick="filterProducts('kids')">
+                kids
+            </button>
+
+            <button class="btn btn-outline-warning m-1" onclick="filterProducts('Mythology')">
+                Mythology
+            </button>
+
+            <button class="btn btn-outline-warning m-1" onclick="filterProducts('scientific')">
+                scientific
+            </button>
+
+            <button class="btn btn-outline-warning m-1" onclick="filterProducts('Marathi')">
+                Marathi
+            </button>
+        </div>
+
+        <!-- Product Cards -->
+
+        <div class="row g-4">
+
+            <!-- Product 1 -->
+
+            <div class="col-md-3 product self">
+                <div class="card h-100">
+                    <img src="self-help/1.jpeg">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The Art Of Laziness</h5>
+                        <p>₹799</p>
+                        <a href="details_1.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="col-md-3 product self">
+                <div class="card h-100">
+                    <img src="self-help/2.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Ikigai</h5>
+                        <p>₹349</p>
+                        <a href="details_2.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="col-md-3 product self">
+                <div class="card h-100">
+                    <img src="self-help/3.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The art of overthinking</h5>
+                        <p>₹299</p>
+                        <a href="details_3.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="col-md-3 product self">
+                <div class="card h-100">
+                    <img src="self-help/4.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The art of being alone</h5>
+                        <p>₹207</p>
+                        <a href="details_4.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+
+            <div class="col-md-3 product kids">
+                <div class="card h-100">
+                    <img src="self-help/5.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Five childrenanf it</h5>
+                        <p>₹299</p>
+                        <a href="details_5.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+
+            <div class="col-md-3 product kids">
+                <div class="card h-100">
+                    <img src="self-help/6.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The lion inside</h5>
+                        <p>₹291</p>
+                        <a href="details_6.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+
+            <div class="col-md-3 product Mythology">
+                <div class="card h-100">
+                    <img src="self-help/7.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The forest of enchantments</h5>
+                        <p>₹299</p>
+                        <a href="details_7.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+
+            <div class="col-md-3 product Mythology">
+                <div class="card h-100">
+                    <img src="self-help/8.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">samsara</h5>
+                        <p>₹213</p>
+                        <a href="details_8.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+
+            <div class="col-md-3 product scientific">
+                <div class="card h-100">
+                    <img src="self-help/9.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">The power of subconscious</h5>
+                        <p>₹299</p>
+                        <a href="details_9.html" class="btn btn-outline-secondaryy">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+
+            <div class="col-md-3 product Marathi">
+                <div class="card h-100">
+                    <img src="self-help/10.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Sukhacha shodh</h5>
+                        <p>₹201</p>
+                        <a href="details_10.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+
+            <div class="col-md-3 product Marathi">
+                <div class="card h-100">
+                    <img src="self-help/11.jpeg" class="card-img-top product-img">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Shyamchi Aai</h5>
+                        <p>₹131</p>
+                        <a href="details_11.html" class="btn btn-outline-secondary">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript Filter -->
+
+    <script>
+        function filterProducts(category) {
+
+            let products = document.querySelectorAll(".product");
+
+            products.forEach(product => {
+
+                if (category === "all") {
+                    product.style.display = "block";
+                }
+                else if (product.classList.contains(category)) {
+                    product.style.display = "block";
+                }
+                else {
+                    product.style.display = "none";
+                }
+
+            });
+
+        }
+    </script>
+    <script>
+        let count = localStorage.getItem("cartCount") || 0;
+        document.getElementById("cartCount").innerText = count;
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
